@@ -1,4 +1,4 @@
-package org.sollunae.stack.axon.account.persistence;
+package org.sollunae.stack.axon.encounter.persistence;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 

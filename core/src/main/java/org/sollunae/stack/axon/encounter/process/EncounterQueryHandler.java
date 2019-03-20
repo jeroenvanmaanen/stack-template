@@ -1,9 +1,9 @@
-package org.sollunae.stack.axon.account.process;
+package org.sollunae.stack.axon.encounter.process;
 
 import org.axonframework.queryhandling.QueryHandler;
-import org.sollunae.stack.axon.account.persistence.EncounterDocument;
-import org.sollunae.stack.axon.account.persistence.EncounterQueryRepository;
-import org.sollunae.stack.axon.account.query.EncounterAllQuery;
+import org.sollunae.stack.axon.encounter.persistence.EncounterDocument;
+import org.sollunae.stack.axon.encounter.persistence.EncounterQueryRepository;
+import org.sollunae.stack.axon.encounter.query.EncounterAllQuery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

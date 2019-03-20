@@ -1,8 +1,8 @@
-package org.sollunae.stack.axon.account.process;
+package org.sollunae.stack.axon.encounter.process;
 
 import org.axonframework.eventhandling.EventHandler;
-import org.sollunae.stack.axon.account.persistence.EncounterDocument;
-import org.sollunae.stack.axon.account.event.EncounterCreatedEvent;
+import org.sollunae.stack.axon.encounter.persistence.EncounterDocument;
+import org.sollunae.stack.axon.encounter.event.EncounterCreatedEvent;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Component;
 

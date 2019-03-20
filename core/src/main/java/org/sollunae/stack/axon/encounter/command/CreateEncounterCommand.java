@@ -1,4 +1,4 @@
-package org.sollunae.stack.axon.account.command;
+package org.sollunae.stack.axon.encounter.command;
 
 import lombok.Builder;
 import lombok.Value;

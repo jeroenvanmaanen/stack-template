@@ -1,4 +1,4 @@
-package org.sollunae.stack.axon.account.event;
+package org.sollunae.stack.axon.encounter.event;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Builder;

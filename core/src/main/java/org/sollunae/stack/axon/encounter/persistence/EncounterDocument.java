@@ -1,4 +1,4 @@
-package org.sollunae.stack.axon.account.persistence;
+package org.sollunae.stack.axon.encounter.persistence;
 
 import lombok.Builder;
 import lombok.Value;
