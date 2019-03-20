@@ -132,10 +132,10 @@
                                 <argument>--library</argument>
                                 <argument>spring-mvc</argument>
                                 <argument>--api-package</argument>
-                                <argument>org.sollunae.STACK.rest</argument>
+                                <argument>org.sollunae.stack.rest</argument>
                                 <argument>--model-package</argument>
-                                <argument>org.sollunae.STACK.model</argument>
-                                <argument>-DconfigPackage=org.sollunae.STACK.rest.config</argument>
+                                <argument>org.sollunae.stack.model</argument>
+                                <argument>-DconfigPackage=org.sollunae.stack.rest.config</argument>
                                 <argument>-DuseTags=true</argument>
                                 <!-- argument>-Dasync=true</argument -->
                                 <argument>-DdelegatePattern=true</argument>
@@ -190,7 +190,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>jeroenvm/STACK-core</repository>
+                    <repository>jeroenvm/stack-core</repository>
                     <tag>${project.version}</tag>
                     <buildArgs>
                         <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>

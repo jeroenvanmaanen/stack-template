@@ -40,6 +40,42 @@ paths:
       - STACK_auth:
         - write:STACK
         - read:STACK
+  /api/admin/unique-bucket/clean-existing-keys:
+    post:
+      tags:
+      - Greeter
+      description: Move existing keys to their respective child buckets
+      operationId: cleanExistingKeys
+      responses:
+        200:
+          description: Successful operation
+  /api/admin/unique-bucket:
+    get:
+      tags:
+      - Greeter
+      description: Describe all unique buckets
+      operationId: describeUniqueBuckets
+      responses:
+        200:
+          description: Successful operation
+          schema:
+            $ref: "#/definitions/ArrayOfUniqueBucket"
+definitions:
+  UniqueBucket:
+    type: object
+    properties:
+      id:
+        type: string
+      fullKeyPrefix:
+        type: string
+      keyPrefix:
+        type: string
+      parentId:
+        type: string
+  ArrayOfUniqueBucket:
+    type: array
+    items:
+      $ref: "#/definitions/UniqueBucket"
 securityDefinitions:
   STACK_auth:
     type: oauth2

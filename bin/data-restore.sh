@@ -10,6 +10,13 @@ source "${BIN}/verbose.sh"
 : ${STACK:=STACK}
 source "${BIN}/settings-local.sh"
 
+SUFFIX=''
+if [[ -n ".$1" ]]
+then
+    SUFFIX="-$1"
+    shift
+fi
+
 AXON_VOLUME="${STACK}_axon-data"
 
 function docker-volume-check() {
@@ -47,4 +54,4 @@ docker volume create "${AXON_VOLUME}"
 docker run --rm -ti \
     -v "${AXON_VOLUME}:/opt/axonframework/data" \
     -v "${PROJECT}:${PROJECT}" -w '/opt/axonframework/data' \
-    alpine:latest /bin/sh -c "tar -xvzf '${PROJECT}/data/backup.tar.gz'"
+    alpine:latest /bin/sh -c "tar -xvzf '${PROJECT}/data/backup${SUFFIX}.tar.gz'"
