@@ -9,7 +9,7 @@ import java.util.Optional;
 
 @Component
 @Slf4j
-public class GreeterService implements GreeterApiDelegate {
+public class STACKService implements StackApiDelegate {
 
     @PostConstruct
     public void postConstruct() {

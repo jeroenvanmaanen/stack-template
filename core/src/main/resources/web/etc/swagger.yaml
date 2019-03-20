@@ -20,7 +20,7 @@ paths:
   /api/prod/{name}:
     post:
       tags:
-      - Greeter
+      - STACK
       description: Prod the greeter to provoke a response
       operationId: prod
       parameters:
@@ -43,7 +43,7 @@ paths:
   /api/admin/unique-bucket/clean-existing-keys:
     post:
       tags:
-      - Greeter
+      - STACK
       description: Move existing keys to their respective child buckets
       operationId: cleanExistingKeys
       responses:
@@ -52,7 +52,7 @@ paths:
   /api/admin/unique-bucket:
     get:
       tags:
-      - Greeter
+      - STACK
       description: Describe all unique buckets
       operationId: describeUniqueBuckets
       responses:
